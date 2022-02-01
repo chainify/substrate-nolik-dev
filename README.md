@@ -215,22 +215,19 @@ First, install [Docker](https://docs.docker.com/get-docker/) and
 
 Then run the following command to start a single node development chain.
 
-```bash
-./scripts/docker_run.sh
+```
+docker compose up -d
 ```
 
-This command will firstly compile your code, and then start a local development network. You can
+This command will download the [substrate-nolik-dev](https://hub.docker.com/r/chainify/substrate-nolik-dev) docker image, and then start a local development network. You can
 also replace the default command
-(`cargo build --release && ./target/release/node-nolik --dev --ws-external`)
+(`./target/release/node-nolik --dev --ws-external`)
 by appending your own. A few useful ones are as follow.
 
-```bash
-# Run Substrate node without re-compiling
-./scripts/docker_run.sh ./target/release/node-nolik --dev --ws-external
+```
+# Compile the code
+docker compose build
 
-# Purge the local dev chain
-./scripts/docker_run.sh ./target/release/node-nolik purge-chain --dev
-
-# Check whether the code is compilable
-./scripts/docker_run.sh cargo check
+# Display and follow the logs
+docker logs -f node-nolik -n 200
 ```

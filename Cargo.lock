@@ -1595,8 +1595,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "418d37c8b1d42553c93648be529cb70f920d3baf8ef469b74b9638df426e0b4c"
 dependencies = [
  "cfg-if 1.0.0",
+ "js-sys",
  "libc",
  "wasi 0.10.0+wasi-snapshot-preview1",
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -3243,7 +3245,7 @@ dependencies = [
 
 [[package]]
 name = "node-nolik"
-version = "0.1.0-dev"
+version = "0.1.1-dev"
 dependencies = [
  "frame-benchmarking",
  "frame-benchmarking-cli",
@@ -3280,7 +3282,7 @@ dependencies = [
 
 [[package]]
 name = "node-nolik-runtime"
-version = "0.1.0-dev"
+version = "0.1.1-dev"
 dependencies = [
  "frame-benchmarking",
  "frame-executive",
@@ -3288,6 +3290,7 @@ dependencies = [
  "frame-system",
  "frame-system-benchmarking",
  "frame-system-rpc-runtime-api",
+ "getrandom 0.2.4",
  "hex-literal",
  "pallet-aura",
  "pallet-balances",
@@ -3555,12 +3558,13 @@ dependencies = [
 
 [[package]]
 name = "pallet-nolik"
-version = "0.1.0-dev"
-source = "git+https://github.com/chainify/pallet-nolik#1ef1d2d1b7349f171b2a5813d7a9459aee03b515"
+version = "0.1.1-dev"
+source = "git+https://github.com/chainify/pallet-nolik#bdd486c8460a5425f180ed085144b555d92dce4f"
 dependencies = [
  "frame-support",
  "frame-system",
  "parity-scale-codec",
+ "rand 0.8.4",
  "scale-info",
 ]
 
@@ -6872,7 +6876,7 @@ version = "1.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ee73e6e4924fe940354b8d4d98cad5231175d615cd855b758adc658c0aac6a0"
 dependencies = [
- "cfg-if 1.0.0",
+ "cfg-if 0.1.10",
  "rand 0.8.4",
  "static_assertions",
 ]

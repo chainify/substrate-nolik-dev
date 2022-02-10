@@ -1,6 +1,6 @@
 [package]
 name = "node-nolik-runtime"
-version = "0.1.1-dev"
+version = "0.1.2-dev"
 description = "A dev FRAME-based Substrate runtime with Nolik pallet."
 authors = ["Chainify <https://github.com/chainify"]
 edition = "2021"
@@ -48,7 +48,7 @@ frame-system-benchmarking = { version = "4.0.0-dev", default-features = false, g
 hex-literal = { version = "0.3.4", optional = true }
 
 # Local Dependencies
-pallet-nolik = { version = "0.1.1-dev", default-features = false, git = "https://github.com/chainify/pallet-nolik" }
+pallet-nolik = { version = "0.1.2-dev", default-features = false, git = "https://github.com/chainify/pallet-nolik" }
 
 [build-dependencies]
 substrate-wasm-builder = { version = "5.0.0-dev", git = "https://github.com/paritytech/substrate.git", tag = "devhub/latest" }

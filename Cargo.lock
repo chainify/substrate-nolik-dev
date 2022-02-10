@@ -3245,7 +3245,7 @@ dependencies = [
 
 [[package]]
 name = "node-nolik"
-version = "0.1.1-dev"
+version = "0.1.2-dev"
 dependencies = [
  "frame-benchmarking",
  "frame-benchmarking-cli",
@@ -3282,7 +3282,7 @@ dependencies = [
 
 [[package]]
 name = "node-nolik-runtime"
-version = "0.1.1-dev"
+version = "0.1.2-dev"
 dependencies = [
  "frame-benchmarking",
  "frame-executive",
@@ -3558,8 +3558,8 @@ dependencies = [
 
 [[package]]
 name = "pallet-nolik"
-version = "0.1.1-dev"
-source = "git+https://github.com/chainify/pallet-nolik#bdd486c8460a5425f180ed085144b555d92dce4f"
+version = "0.1.2-dev"
+source = "git+https://github.com/chainify/pallet-nolik#699ed354f75056a434fa4554f38cee453380bc20"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -6876,7 +6876,7 @@ version = "1.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ee73e6e4924fe940354b8d4d98cad5231175d615cd855b758adc658c0aac6a0"
 dependencies = [
- "cfg-if 0.1.10",
+ "cfg-if 1.0.0",
  "rand 0.8.4",
  "static_assertions",
 ]

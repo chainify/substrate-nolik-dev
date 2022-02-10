@@ -14,7 +14,17 @@ RUN rustup update nightly
 RUN rustup target add wasm32-unknown-unknown --toolchain nightly
 
 WORKDIR /opt
-COPY . .
+COPY ./docs ./docs
+COPY ./node ./node
+COPY ./pallets ./pallets
+COPY ./runtime ./runtime
+COPY ./scripts ./scripts
+COPY ./Cargo.toml ./Cargo.toml
+COPY ./.editorconfig ./.editorconfig
+COPY ./.envrc ./.envrc
+COPY ./rustfmt.toml ./ristfmt.toml
+COPY ./shell.nix ./shell.nix
+
 RUN cargo build --release
 
 EXPOSE 9944
